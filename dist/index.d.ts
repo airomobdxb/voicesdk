@@ -1,0 +1,35 @@
+export interface VoiceAIOptions {
+  apiKey: string;
+  appId: string;
+  onError?: (err: any) => void;
+}
+
+export type VoiceAIButtonProps =
+  | {
+      buttonType?: "pill";
+      logo?: string;
+      buttonColor?: string;
+      wrapperColor?: string;
+      textColor?: string;
+      loaderColor?: string;
+    }
+  | {
+      buttonType: "widget";
+      logo?: string;
+      title?: string;
+    };
+
+
+/**
+ * SDK class for initialization using apiKey and appId
+ */
+export default class VoiceAI {
+  constructor(options: VoiceAIOptions);
+
+  /**
+   * Initialize SDK, verify and create session.
+   */
+  init(): Promise<void>;
+}
+
+export const VoiceAIButton: React.FC<VoiceAIButtonProps>;
