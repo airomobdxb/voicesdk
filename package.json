@@ -5,6 +5,9 @@
   "type": "module",
   "main": "dist/voice-ai.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -19,8 +22,11 @@
     "@lottiefiles/dotlottie-react": "^0.17.5",
     "axios": "^1.13.0",
     "framer-motion": "^12.23.22",
+    "idb-keyval": "^6.3.0",
+    "lucide-react": "^1.7.0",
     "react-toastify": "^11.0.5",
-    "socket.io-client": "^4.8.1"
+    "socket.io-client": "^4.8.1",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@rollup/plugin-strip": "^3.0.4",
