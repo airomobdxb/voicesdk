@@ -12432,7 +12432,7 @@ const j8 = ({ orchestrationSocketRef: e }) => {
         type: "offer",
         sdp: _
       });
-      const T = await fetch(`${I2}/voice/session/start`, {
+      const T = await fetch(`${I2}/api/session/voice/start`, {
         method: "POST",
         headers: {
           ...g3(),
